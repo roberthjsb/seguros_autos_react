@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from '@emotion/styled'
-import {
-    PrimeraMayuscula
-} from '../Helper';
+import { PrimeraMayuscula } from '../Helper'
 import PropTypes from 'prop-types'
 
 const ContenedorResumen = styled.div`
@@ -21,9 +19,7 @@ const Resumen = ({ datos }) => {
       <h2>Resumen de Cotización </h2>{' '}
       <ul>
         <li> Marca: {PrimeraMayuscula(marca)} </li>
-        < li > Plan: {
-                PrimeraMayuscula(plan)
-                } < /li>
+        <li> Plan: {PrimeraMayuscula(plan)} </li>
         <li> Año: {year} </li>
       </ul>
     </ContenedorResumen>
