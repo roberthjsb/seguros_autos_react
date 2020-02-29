@@ -11,7 +11,7 @@ export function calcularMarca(marca) {
        case 'americano':
            incremento = 1.15;
            break;
-       case 'aiatico':
+       case 'asiatico':
            incremento = 1.05;
            break;       
        default:
@@ -21,4 +21,7 @@ export function calcularMarca(marca) {
 }
 export function obtenerPlan(plan) { 
     return plan === 'basico' ? 1.20 : 1.50;
+}
+export function PrimeraMayuscula(texto) {
+    return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
